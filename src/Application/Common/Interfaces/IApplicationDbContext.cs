@@ -5,9 +5,6 @@ namespace Sat.Recruitment.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
-    DbSet<TodoList> TodoLists { get; }
-
-    DbSet<TodoItem> TodoItems { get; }
-
+    public DbSet<User> User { get; set; }
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

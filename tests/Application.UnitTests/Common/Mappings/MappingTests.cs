@@ -2,9 +2,9 @@
 using AutoMapper;
 using Sat.Recruitment.Application.Common.Mappings;
 using Sat.Recruitment.Application.Common.Models;
-using Sat.Recruitment.Application.TodoLists.Queries.GetTodos;
 using Sat.Recruitment.Domain.Entities;
 using NUnit.Framework;
+using Sat.Recruitment.Application.Users.Queries.GetUsers;
 
 namespace Sat.Recruitment.Application.UnitTests.Common.Mappings;
 
@@ -28,10 +28,7 @@ public class MappingTests
     }
 
     [Test]
-    [TestCase(typeof(TodoList), typeof(TodoListDto))]
-    [TestCase(typeof(TodoItem), typeof(TodoItemDto))]
-    [TestCase(typeof(TodoList), typeof(LookupDto))]
-    [TestCase(typeof(TodoItem), typeof(LookupDto))]
+    [TestCase(typeof(User), typeof(UserDto))]
     public void ShouldSupportMappingFromSourceToDestination(Type source, Type destination)
     {
         var instance = GetInstanceOf(source);

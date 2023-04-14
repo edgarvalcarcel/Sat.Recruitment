@@ -1,8 +1,8 @@
-﻿using Sat.Recruitment.Application.TodoLists.Queries.ExportTodos;
+﻿using Sat.Recruitment.Application.Users.Queries.ExportUsers;
 
 namespace Sat.Recruitment.Application.Common.Interfaces;
 
 public interface ICsvFileBuilder
 {
-    byte[] BuildTodoItemsFile(IEnumerable<TodoItemRecord> records);
+    byte[] BuildUserRecordsFile(IEnumerable<UserFileRecord> records);
 }

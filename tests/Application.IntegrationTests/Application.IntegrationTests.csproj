@@ -34,7 +34,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\WebUI\API.csproj" />
+      <ProjectReference Include="..\..\src\API\API.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Users\Commands\" />
+      <Folder Include="Users\Queries\" />
     </ItemGroup>
 
 </Project>
