@@ -10,8 +10,7 @@ using Sat.Recruitment.WebUI.Controllers;
 namespace Sat.Recruitment.API.Controllers;
 [Authorize]
 public class UserController : ApiControllerBase
-{  
-
+{ 
     [HttpPost]
     public async Task<ActionResult<int>> Create(CreateUserCommand command)
     {
