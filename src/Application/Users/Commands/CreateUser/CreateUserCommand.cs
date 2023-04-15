@@ -13,7 +13,7 @@ public record CreateUserCommand : IRequest<int>
     public string? Address { get; init; }
     public string? Phone { get; init; }
     public int UserType { get; init; }
-    public decimal? Money { get; init; }
+    public float? Money { get; init; }
 }
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>

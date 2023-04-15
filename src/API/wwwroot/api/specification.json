@@ -36,12 +36,7 @@
               }
             }
           }
-        },
-        "security": [
-          {
-            "JWT": []
-          }
-        ]
+        }
       }
     }
   },
@@ -73,7 +68,7 @@
           },
           "money": {
             "type": "number",
-            "format": "decimal",
+            "format": "float",
             "nullable": true
           }
         }

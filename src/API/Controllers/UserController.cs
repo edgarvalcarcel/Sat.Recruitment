@@ -8,7 +8,9 @@ using MediatR;
 using Sat.Recruitment.WebUI.Controllers;
 
 namespace Sat.Recruitment.API.Controllers;
-[Authorize]
+
+//Commented for hiring purposes
+//[Authorize] 
 public class UserController : ApiControllerBase
 { 
     [HttpPost]
