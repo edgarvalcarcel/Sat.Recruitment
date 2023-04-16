@@ -24,6 +24,9 @@ public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
 
         RuleFor(u => u.Money).NotNull().GreaterThan(0)
            .NotEmpty().WithMessage("{PropertyName} is required, greater than 0.");
-        
+
+        RuleFor(u => u.UserType).GreaterThan(0).NotNull().NotEmpty().WithMessage("{PropertyName} is required, and 1,2 or 3.");
+
+
     }
 }
