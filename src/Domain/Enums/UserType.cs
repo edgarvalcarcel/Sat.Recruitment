@@ -8,8 +8,7 @@ namespace Sat.Recruitment.Domain.Enums;
 
 public enum UserType
 {
-    Operator = 1,
-    Supervisor = 2,
-    Developer = 3,
-    Publisher = 4
+    Normal = 1,
+    SuperUser = 2,
+    Premium = 3
 }

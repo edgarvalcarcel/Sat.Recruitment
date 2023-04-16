@@ -11,6 +11,6 @@ public class User: BaseAuditableEntity
     public string? Email { get; set; }
     public string? Address { get; set; }
     public string? Phone { get; set; }
-    public UserType? UserType { get; set; }
-    public float? Money { get; set; }
+    public UserType UserType { get; set; }
+    public float Money { get; set; }
 }

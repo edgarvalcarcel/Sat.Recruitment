@@ -13,7 +13,7 @@ public record CreateUserCommand : IRequest<int>
     public string? Address { get; init; }
     public string? Phone { get; init; }
     public int UserType { get; init; }
-    public float? Money { get; init; }
+    public float Money { get; init; }
 }
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
@@ -26,7 +26,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
     }
 
     public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
-    {
+    { 
         var entity = new User
         {
             Name = request.Name,
@@ -34,8 +34,9 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
             Address = request.Address,
             Phone = request.Phone,
             UserType = (UserType)Enum.Parse(typeof(UserType), value: request.UserType.ToString()),
-            Money = request.Money,
+            Money = request.Money
         };
+        entity.Money += (float)CreateUserRulesExtensions.IncreaseValue((int)entity.UserType, (float)entity.Money);
 
         entity.AddDomainEvent(new UserCreatedEvent(entity));
 
