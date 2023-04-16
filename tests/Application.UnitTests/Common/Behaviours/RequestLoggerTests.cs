@@ -37,7 +37,7 @@ public class RequestLoggerTests
             Address = "6198 Bailey Ports",
             Phone = "524.232.8003",
             UserType = (int)(UserType)Enum.Parse(typeof(UserType),"1"),
-            Money = (float?)25.00,
+            Money = (float)25.00,
         }, new CancellationToken());
 
         _identityService.Verify(i => i.GetUserNameAsync(It.IsAny<string>()), Times.Once);
@@ -55,7 +55,7 @@ public class RequestLoggerTests
             Address = "810 Stroman Bridge",
             Phone = "95419-0807",
             UserType = (int)(UserType)Enum.Parse(typeof(UserType), "1"),
-            Money = (float?)25.00,
+            Money = (float)25.00,
         }, new CancellationToken());
 
         _identityService.Verify(i => i.GetUserNameAsync(It.IsAny<string>()), Times.Never);

@@ -37,6 +37,25 @@
             }
           }
         }
+      },
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_Get",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -68,8 +87,7 @@
           },
           "money": {
             "type": "number",
-            "format": "float",
-            "nullable": true
+            "format": "float"
           }
         }
       }

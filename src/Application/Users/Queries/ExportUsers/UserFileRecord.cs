@@ -12,6 +12,10 @@ public class UserFileRecord : IMapFrom<User>
 {
     public string? Name { get; set; }
     public string? Email { get; set; }
+    public string? Address { get; set; }
     public string? Phone { get; set; }
-    public string? Type { get; set; }
+    public UserType UserType { get; set; }
+    public float Money { get; set; }
 }
+
+
