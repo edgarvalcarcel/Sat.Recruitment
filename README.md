@@ -24,31 +24,31 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=edgarvalcarcel&show_icons=true&locale=en&layout=compact" alt="edgarvalcarcel" /></p>
 
 <p>
- Technologies on this Project
-ASP.NET Core 7
-Entity Framework Core 7
-MediatR
-AutoMapper
-FluentValidation
-NUnit, FluentAssertions, Moq & Respawn
+<h1>Technologies on this Project</h1>
+- 📄 ASP.NET Core 7
+- 📄 Entity Framework Core 7
+- 📄 MediatR
+- 📄 AutoMapper
+- 📄 FluentValidation
+- 📄 NUnit, FluentAssertions, Moq & Respawn
 
-Database Configuration
+<h1>Database Configuration</h3>
 database is on Azure by default. I need to know your Ip to enable on AZ Firewall, This ensures that you will be able to run the solution.
 
-Overview
-Domain
+<h1>Overview</h1>
+<h3>Domain</h3>
 This will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer.
 
-Application
+<h3>Application</h3>
 This layer contains all application logic. It is dependent on the domain layer, but has no dependencies on any other layer or project. This layer defines interfaces that are implemented by outside layers. For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
 
-Infrastructure
+<h3>Infrastructure</h3>
 This layer contains classes for accessing external resources such as file systems, web services, smtp, and so on. These classes should be based on interfaces defined within the application layer.
 
-WebUI
+<h3>WebUI</h3>
 This layer is a Swagger Rest API page. This layer depends on both the Application and Infrastructure layers, to support dependency injection.
 
-Support
+<h3>Support</h3>
 If you are having problems, please let me know write me to edgarvalcarcel@hotmail.com.
 
 </p>
