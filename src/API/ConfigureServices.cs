@@ -22,14 +22,8 @@ public static class ConfigureServices
 
         services.AddHealthChecks()
             .AddDbContextCheck<ApplicationDbContext>();
+        services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 
-        services.AddControllersWithViews(options =>
-            options.Filters.Add<ApiExceptionFilterAttribute>())
-                .AddFluentValidation(x => x.AutomaticValidationEnabled = false);
-
-        //services.AddRazorPages();
-
-        // Customise default API behaviour
         services.Configure<ApiBehaviorOptions>(options =>
             options.SuppressModelStateInvalidFilter = true);
 
