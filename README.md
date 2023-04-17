@@ -32,8 +32,8 @@
 - 📄 FluentValidation
 - 📄 NUnit, FluentAssertions, Moq & Respawn
 
-<h1>Database Configuration</h3>
-database is on Azure by default. I need to know your Ip to enable on AZ Firewall, This ensures that you will be able to run the solution.
+<h1>Database Configuration</h1>
+The database is on Azure by default. For testing and hiring I need to know your <b>computer IP</b> to enable you on AZ Firewall, This ensures that you will be able to run the solution.
 
 <h1>Overview</h1>
 <h3>Domain</h3>
@@ -48,7 +48,7 @@ This layer contains classes for accessing external resources such as file system
 <h3>WebUI</h3>
 This layer is a Swagger Rest API page. This layer depends on both the Application and Infrastructure layers, to support dependency injection.
 
-<h3>Support</h3>
-If you are having problems, please let me know write me to edgarvalcarcel@hotmail.com.
+<h2>Support</h2>
+<h3>If you are having problems, please let me know write me to edgarvalcarcel@hotmail.com</h3>
 
 </p>
