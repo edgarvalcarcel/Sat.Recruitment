@@ -28,10 +28,10 @@
 
     <ItemGroup>
       <None Update="Persistence\SatRecruitmentDB.mdf">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </None>
       <None Update="Persistence\SatRecruitmentDB_log.ldf">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
