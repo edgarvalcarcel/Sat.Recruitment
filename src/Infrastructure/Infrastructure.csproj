@@ -26,4 +26,13 @@
       <Folder Include="Persistence\Migrations\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Persistence\SatRecruitmentDB.mdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Persistence\SatRecruitmentDB_log.ldf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
